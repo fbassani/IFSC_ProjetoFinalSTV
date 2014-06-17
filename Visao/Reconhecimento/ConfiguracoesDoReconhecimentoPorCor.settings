@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Visao.Reconhecimento" GeneratedClassName="ConfiguracoesDoReconhecimentoPorCor">
+  <Profiles />
+  <Settings>
+    <Setting Name="RValor" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">129</Value>
+    </Setting>
+    <Setting Name="RTolerancia" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="GValor" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="GTolerancia" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+    <Setting Name="BValor" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="BTolerancia" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">134</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

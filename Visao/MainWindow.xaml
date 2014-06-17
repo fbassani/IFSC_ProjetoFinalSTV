@@ -1,0 +1,23 @@
+﻿<Window x:Class="Visao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:visao="clr-namespace:Visao"
+        Title="Visão" Height="509" Width="645" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF1F1F1" Offset="0"/>
+                <GradientStop Color="White" Offset="0.725"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox HorizontalAlignment="Left" Height="324" Margin="10,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="607" VerticalScrollBarVisibility="Auto" Name="LogTextBox" FontFamily="Consolas" FontSize="11" IsReadOnly="True"/>
+        <Label Content="Log" HorizontalAlignment="Left" Margin="12,106,0,0" VerticalAlignment="Top"/>
+        <Label Content="Porta" HorizontalAlignment="Left" Margin="14,6,0,0" VerticalAlignment="Top"/>
+        <Button Content="Conectar" HorizontalAlignment="Left" Margin="13,37,0,0" VerticalAlignment="Top" Width="137" Command="{Binding Path=ConectarCommand}" IsEnabled="{Binding Path=ConectarHabilitado}"/>
+        <Button Content="Iniciar/Parar motor" HorizontalAlignment="Left" Margin="14,62,0,0" VerticalAlignment="Top" Width="136" Command="{Binding Path=MotorCommand}" IsEnabled="{Binding Path=IniciarHabilitado}" />
+        <GroupBox Header="Testes manuais" HorizontalAlignment="Left" Height="72" Margin="179,10,0,0" VerticalAlignment="Top" Width="438"/>
+        <Button Content="Acionar válvula" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="190,37,0,0" Command="{Binding Path=ValvulaCommand}" IsEnabled="{Binding Path=AcionarValvulaHabilitado}"/>
+        <Button Content="Captura manual" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="332,37,0,0" Command="{Binding CapturaManualCommand}" IsEnabled="{Binding CapturaManualHabilitado}"/>
+        <ComboBox x:Name="ComboPortas" HorizontalAlignment="Left" Margin="57,10,0,0" VerticalAlignment="Top" Width="92" ItemsSource="{Binding Path=PortasDisponiveis}" SelectedItem="{Binding Path=PortaSelecionada}" />
+    </Grid>
+</Window>
